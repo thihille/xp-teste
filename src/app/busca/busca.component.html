@@ -1,0 +1,26 @@
+<section class="row">
+    <div class="column column-12">
+        <div class="fg">
+          <label for="txtBusca">Busque por artistas, álbuns ou músicas</label>
+          <input [formControl]="inputBusca" type="search" autofocus="true" name="" id="" placeholder="Comece a escrever...">
+        </div>
+        <div class="filter-select">
+          <ul class="filter-select">
+            <div *ngFor="let res of resultadoBusca" >
+
+              <li class="filter-select-list">
+                <img [src]="res.images['2']?.url" alt="{{ res.name }}" width="50" height="50">
+                <p class="artist-name">{{ res.name }}</p>
+              </li>
+            </div>
+          </ul>
+        </div>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="column column-2">1</div>
+    <div class="column column-4">2</div>
+    <div class="column column-4">3</div>
+    <div class="column column-2">4</div>
+  </section>

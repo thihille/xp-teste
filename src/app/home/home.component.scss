@@ -1,0 +1,23 @@
+.fg {
+  max-width: 80vw;
+  margin: 0 auto;
+  padding-top:40px;
+}
+label {
+  font-family: 'Roboto-regular';
+  font-size: 14px;
+  color: #fafafa;
+}
+input[type=search] {
+  display: block;
+  background: transparent;
+  color: #999;
+  border: none;
+  width: 100%;
+  font-size: 48px;
+  font-family: 'Roboto-bold';
+  border-bottom: 1px solid #999;
+}
+input[type=search]:focus{
+  outline: none;
+}
